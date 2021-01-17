@@ -17,8 +17,8 @@ body {
 	display: grid;
 	border: solid white medium;
 	float: left;
-	grid-template-columns: 25% 25%;
-	grid-row: 1;
+/*	grid-template-columns: 25% 25%;
+*/	grid-row: 1;
 }
 #story-title {
 	padding: 1%;
@@ -30,8 +30,10 @@ body {
 }
 
 #story-subtitle {
-background-color: inherit;
-grid-column: 5;
+	background-color: inherit;
+/*	grid-column: 5;
+*/	grid-row: 2;
+	padding: 3%;
 }
 #invlink a{
 	color: #ff0000;
@@ -46,7 +48,7 @@ grid-column: 5;
 }
 
 #passages {
-	width: 40%;
+	width: 50vw;
 	flex-flow: row nowrap;
 	display: grid;
 	padding: 2%;
