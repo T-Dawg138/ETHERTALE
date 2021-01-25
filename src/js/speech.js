@@ -27,7 +27,7 @@
         var $img = $(document.createElement('img'))
             .attr('src', imgSrc || characters.get(character) || '');
 
-        if ($img.attr('src') && $img.attr('src').trim()) {
+        if (!variables().PCOffline && $img.attr('src') && $img.attr('src').trim()) {
             $box.append($img);
         }
 
