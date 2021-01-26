@@ -32,10 +32,16 @@
         }
 
         // name and content boxes
+        if (variables().PCOffline) {
+            var nameBox = document.createElement('p');
+            nameBox.setAttribute("class","nameBox");
+            $box.append($(nameBox))
+                .wiki(character.toUpperCase());
+        }
+        
         $box.append($(document.createElement('p'))
-            .wiki(character.toUpperFirst()))
-            .append($(document.createElement('p'))
                 .wiki(text));
+        
 
         if ($output) {
             if (!($output instanceof $)) {
